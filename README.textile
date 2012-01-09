@@ -1,0 +1,12 @@
+h1. Recipes
+
+Windows Script Management System. Let's you organize, share and easily run scripts on windows.
+
+h2. For Version 1.0
+
+* Run scripts written in C#, Roslyn and IronRuby
+* Easy script deployment
+
+
+Disclaimer: Currently under conceptualization phase.
+
