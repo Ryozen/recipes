@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}</ProjectGuid>
+    <ProjectGuid>{5B09AF45-7E11-4800-AD75-D319536B2D1E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Recipes.Shared</RootNamespace>
-    <AssemblyName>Recipes.Shared</AssemblyName>
+    <RootNamespace>Recipes.ScriptRunners</RootNamespace>
+    <AssemblyName>Recipes.ScriptRunners</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IScriptRunner.cs" />
+    <Compile Include="DotNetScriptRunner.cs" />
+    <Compile Include="IronRubyScriptRunner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoslynScriptRunner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recipes.Shared\Recipes.Shared.csproj">
+      <Project>{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}</Project>
+      <Name>Recipes.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

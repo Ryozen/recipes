@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.Core", "src\Recipes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.Shared", "src\Recipes.Shared\Recipes.Shared.csproj", "{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recipes.ScriptRunners", "src\Recipes.ScriptRunners\Recipes.ScriptRunners.csproj", "{5B09AF45-7E11-4800-AD75-D319536B2D1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5B09AF45-7E11-4800-AD75-D319536B2D1E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Recipes.Core
 {
-    public class Class1
+    public class Runner
     {
     }
 }

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Recipes.Shared;
 
-namespace Recipes.Shared
+namespace Recipes.ScriptRunners
 {
-    public class Class1
+    public class DotNetScriptRunner : IScriptRunner
     {
     }
 }
