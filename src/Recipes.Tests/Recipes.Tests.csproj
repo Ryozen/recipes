@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}</ProjectGuid>
+    <ProjectGuid>{0A84C8D9-1415-4631-AE77-2A9020008A96}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Recipes.Shared</RootNamespace>
-    <AssemblyName>Recipes.Shared</AssemblyName>
+    <RootNamespace>Recipes.Tests</RootNamespace>
+    <AssemblyName>Recipes.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -38,12 +38,29 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\..\packages\xunit.1.9.0.1566\lib\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.extensions">
+      <HintPath>..\..\packages\xunit.extensions.1.9.0.1566\lib\xunit.extensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExecutionResult.cs" />
-    <Compile Include="IScriptRunner.cs" />
+    <Compile Include="RunnerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScriptContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recipes.Core\Recipes.Core.csproj">
+      <Project>{B9C4E782-971B-4E9C-B462-A159348D6DF5}</Project>
+      <Name>Recipes.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recipes.Shared\Recipes.Shared.csproj">
+      <Project>{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}</Project>
+      <Name>Recipes.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

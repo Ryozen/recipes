@@ -16,3 +16,9 @@ task :run do
   cd 'bin/debug'
   sh './recipes'
 end
+
+desc 'test'
+task :test do
+  cd 'bin/debug'
+  sh 'xunit.console.clr4 Recipes.Tests.dll'
+end
