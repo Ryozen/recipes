@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DotNetScriptRunner.cs" />
+    <Compile Include="CSharpScriptRunner.cs" />
     <Compile Include="IronRubyScriptRunner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoslynScriptRunner.cs" />

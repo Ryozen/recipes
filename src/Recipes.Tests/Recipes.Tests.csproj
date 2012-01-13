@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RunnerTest.cs" />
+    <Compile Include="CoreTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +56,14 @@
     <ProjectReference Include="..\Recipes.Core\Recipes.Core.csproj">
       <Project>{B9C4E782-971B-4E9C-B462-A159348D6DF5}</Project>
       <Name>Recipes.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recipes.ScriptRunners\Recipes.ScriptRunners.csproj">
+      <Project>{5B09AF45-7E11-4800-AD75-D319536B2D1E}</Project>
+      <Name>Recipes.ScriptRunners</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recipes.Scripts.CSharp\Recipes.Scripts.CSharp.csproj">
+      <Project>{BBFA10B0-D02C-4F4A-8B6F-9CF4513A6BEA}</Project>
+      <Name>Recipes.Scripts.CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="..\Recipes.Shared\Recipes.Shared.csproj">
       <Project>{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}</Project>

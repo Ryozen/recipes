@@ -7,5 +7,9 @@ namespace Recipes.Shared
 {
     public interface IScriptRunner
     {
+
+        string Name { get; }
+        ExecutionResult Execute(ScriptContext context);
+
     }
 }

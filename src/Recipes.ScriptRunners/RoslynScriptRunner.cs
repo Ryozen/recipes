@@ -8,5 +8,17 @@ namespace Recipes.ScriptRunners
 {
     public class RoslynScriptRunner : IScriptRunner
     {
+
+        const string RUNNER_NAME = "roslyn";
+
+        public string Name
+        {
+            get { return RUNNER_NAME; }
+        }
+
+        public ExecutionResult Execute(ScriptContext context)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

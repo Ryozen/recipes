@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Recipes.Shared;
+using System.ComponentModel.Composition;
 
 namespace Recipes.ScriptRunners
 {
-    public class IronRubyScriptRunner : IScriptRunner
+    [Export(typeof(IScriptRunner))]
+    public class CSharpScriptRunner : IScriptRunner
     {
 
-        const string RUNNER_NAME = "ruby";
+        const string RUNNER_NAME = "csharp";
 
         public string Name
         {
@@ -18,7 +20,7 @@ namespace Recipes.ScriptRunners
 
         public ExecutionResult Execute(ScriptContext context)
         {
-            throw new NotImplementedException();
+            return new ExecutionResult() { Output = context.Parameters["message"] };
         }
     }
 }
