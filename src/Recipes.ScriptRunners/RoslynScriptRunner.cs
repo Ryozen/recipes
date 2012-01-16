@@ -20,5 +20,23 @@ namespace Recipes.ScriptRunners
         {
             throw new NotImplementedException();
         }
+
+
+        public RunnerCatalog RunnerCatalog
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public List<ScriptDefinition> GetScripts()
+        {
+            return null;
+        }
     }
 }

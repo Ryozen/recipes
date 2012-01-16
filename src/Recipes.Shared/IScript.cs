@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Recipes.Shared
 {
-    public interface IScriptRunner
+    public interface IScript
     {
 
         string Name { get; }
-        RunnerCatalog RunnerCatalog { get; set; }
+        string Description { get; }
+        string Help { get; }
         ExecutionResult Execute(ScriptContext context);
-        List<ScriptDefinition> GetScripts();
 
     }
 }

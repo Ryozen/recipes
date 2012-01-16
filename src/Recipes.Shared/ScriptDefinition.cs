@@ -5,16 +5,14 @@ using System.Text;
 
 namespace Recipes.Shared
 {
-    public class ScriptContext
+    public class ScriptDefinition
     {
 
         public string Name { get; set; }
-
-        public string Reference { get; set; }
-
+        public string Description { get; set; }
+        public string Help { get; set; }
         public string Type { get; set; }
-
-        public Dictionary<string, string> Parameters { get; set; }
+        public object Reference { get; set; }
 
     }
 }
