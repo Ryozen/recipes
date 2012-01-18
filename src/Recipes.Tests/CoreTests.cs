@@ -20,7 +20,7 @@ namespace Recipes.Tests
                 ScriptContext context = new ScriptContext()
                 {
                     Type = "csharp",
-                    Name = "writer",
+                    Name = "write",
                     Parameters = new Dictionary<string, string>() 
                 {
                     { "message", "hello world" }

@@ -52,6 +52,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Recipes.Core\Recipes.Core.csproj">
+      <Project>{B9C4E782-971B-4E9C-B462-A159348D6DF5}</Project>
+      <Name>Recipes.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Recipes.Shared\Recipes.Shared.csproj">
+      <Project>{D581AEF4-A4EB-4E0C-9632-77D6977AA98E}</Project>
+      <Name>Recipes.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

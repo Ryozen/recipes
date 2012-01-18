@@ -14,7 +14,7 @@ end
 desc 'run'
 task :run do
   cd 'bin/debug'
-  sh './recipes'
+  sh './recipes write /p:message="hello world"'
 end
 
 desc 'test'

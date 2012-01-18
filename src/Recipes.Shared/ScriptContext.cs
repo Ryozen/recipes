@@ -10,8 +10,6 @@ namespace Recipes.Shared
 
         public string Name { get; set; }
 
-        public string Reference { get; set; }
-
         public string Type { get; set; }
 
         public Dictionary<string, string> Parameters { get; set; }

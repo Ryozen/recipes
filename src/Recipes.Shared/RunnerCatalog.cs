@@ -41,6 +41,11 @@ namespace Recipes.Shared
             return Scripts.FirstOrDefault(s => s.Name == name && s.Type == type);
         }
 
+        public ScriptDefinition GetScript(string name)
+        {
+            return Scripts.FirstOrDefault(s => s.Name == name);
+        }
+
         public RunnerCatalog(ComposablePartCatalog catalog)
         {
             Initialize(catalog);

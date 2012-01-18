@@ -11,7 +11,7 @@ namespace Recipes.Scripts.CSharp
     [Export(typeof(IScript))]
     public class ConsoleWriter : IScript
     {
-        const string SCRIPT_NAME = "writer";
+        const string SCRIPT_NAME = "write";
         const string DESCRIPTION = "Writes message to screen";
         const string HELP = "[message] - writes the message passed to screen";
 
